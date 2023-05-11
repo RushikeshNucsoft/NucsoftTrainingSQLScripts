@@ -50,7 +50,7 @@ foreign key (language_id) references language(language_id))
 
 INSERT INTO film 
 VALUES 
-(101, 'SHOLEY', 'Bolyywood Old Movie', CONVERT(DATE, '1956-05-05', 23), 1, 201, 4, 1000, 5, 50, 9, 'Old Bollywood movie', CONVERT(DATETIME, '2023-01-01', 120)),
+(103, 'RRR', 'Bolyywood Old Movie', CONVERT(DATE, '2020-05-02', 23), 1, 201, 4, 1000, 5, 50, 9, 'New Bollywood movie', CONVERT(DATETIME, '2023-01-01', 120)),
 (102, 'YJHD', 'Bolyywood New Movie', CONVERT(DATE, '1956-05-05', 23), 1, 201, 4, 2000, 6, 50, 9, 'Full on Entertainment', CONVERT(DATETIME, '2023-01-01', 120));
 
 select * from film
@@ -61,7 +61,7 @@ last_name varchar(20),
 last_update date,
 primary key(actor_id))
 
-insert into actor values(1, 'Amitab', 'Bacchan', '1999-11-09'),
+insert into actor values(3, 'NTR JR', 'RRR', '2020-05-02'),
 (2, 'Ranveer', 'kapoor', '2010-12-27')
 
 select * from actor

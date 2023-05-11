@@ -41,3 +41,5 @@ return @rental_fees +@over_due -@payments
 end
 
 select dbo.cust_bal(72,'2022-04-12');
+
+
