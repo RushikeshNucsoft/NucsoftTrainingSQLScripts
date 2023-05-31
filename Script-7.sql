@@ -2,16 +2,22 @@
 select title,descripton,language_id,
 RANK () OVER( ORDER BY descripton) AS RANK
 From film
+rownumber()
+dense_rank()
 
 --analytic function
 select title,language_id,descripton,
 FIRST_VALUE (title) OVER(PARTITION BY language_id ORDER BY title) AS FIRST_VALUE
 FROM film;
+last_value();
+lead();
+lag();
 
 --group by function
 select language_id, GROUPING(language_id) AS 'Grouping'
 FROM film
 Group by language_id WITH ROLLUP;
+cube();
 
 --Quarter function
 create function Quarter(@date Date)

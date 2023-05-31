@@ -216,6 +216,9 @@ from actor
 inner join film_actor on 
 actor.actor_id = film_actor.actor_id;
 
+select * from actor;
+select * from film_actor;
+
 
 SELECT *
 FROM actor 
@@ -300,4 +303,4 @@ and payment.customer_id = @customer_id
 return @rental_fees +@over_due -@payments
 end
 
-
+ cust_bal(71,'2011-01-02');
